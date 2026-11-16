@@ -1,0 +1,58 @@
+# Inventario temporario - Motorola edge 70 pro / Android 16
+# Gerado a partir de: adb shell pm list packages -3 -i --user 0
+#
+# [ ] ainda nao selecionado
+# [x] candidato a inclusao na configuracao de debloat
+#
+# A classificacao "third-party" e feita pelo Android. Ela nao significa que o
+# app seja bloatware ou seguro para remover. Depois da revisao, os selecionados
+# serao separados entre a camada base e o perfil Motorola.
+
+## Instalador Motorola DTI (com.dti.motorola)
+
+[X] com.king.candycrushsodasaga              # Candy Crush Soda Saga
+[x] com.oakever.arrows                       # Jogo; confirmar nome/funcao
+[x] com.oakever.tiletrip                     # Tile Trip
+[X] com.oupeng.sugarburst                    # Sugar Burst
+[x] com.puzzlegames.puzzlebrickslegend       # Jogo de blocos
+[X] com.revoke.health.alarmclock             # Despertador; confirmar nome/funcao
+[X] com.shopee.br                            # Shopee
+[X] com.ss.android.ttmd.video                # TikTok Lite
+[X] com.taxis99                              # 99
+[X] pdf.pdfreader.viewer.editor.free         # Leitor/editor de PDF
+
+## Instalador Google Play (com.android.vending)
+
+[ ] br.com.ctncardoso.ctncar                 # Confirmar nome/funcao drivvo
+[ ] br.com.intermedium                       # Banco Inter
+[X] com.adobe.scan.android                   # Adobe Scan
+[ ] com.alibaba.aliexpresshd                 # AliExpress
+[ ] com.amazon.mShop.android.shopping        # Amazon Shopping
+[X] com.amazon.mp3                           # Amazon Music
+[X] com.block.juggle                         # Juggle
+[X] com.facebook.katana                      # Facebook
+[X] com.fitbit.FitbitMobile                  # Fitbit
+[X] com.gigs.motorolaglobalconnect           # Motorola Global Connect
+[ ] com.google.android.apps.adm              # Google Find Hub / Encontrar dispositivo
+[X] com.google.android.apps.chromecast.app   # Google Home
+[ ] com.google.android.apps.subscriptions.red # Google One
+[ ] com.google.android.apps.walletnfcrel     # Google Wallet
+[ ] com.google.android.contactkeys           # Google Contact Keys; componente de seguranca
+[X] com.google.android.play.games            # Google Play Games
+[ ] com.google.android.safetycore            # Android SafetyCore; componente de seguranca
+[X] com.instagram.android                    # Instagram
+[X] com.kwai.video                           # Kwai
+[X] com.lemon.lvoverseas                     # CapCut
+[ ] com.linkedin.android                     # LinkedIn
+[ ] com.mercadolibre                         # Mercado Livre
+[ ] com.nu.production                        # Nubank
+[ ] com.schibsted.bomnegocio.androidApp      # OLX
+[X] com.solace.fifaheroes                    # Jogo FIFA Heroes
+[ ] com.spotify.music                        # Spotify
+[ ] com.ubercab                              # Uber
+[X] com.vitastudio.mahjong                   # Mahjong
+[ ] com.whatsapp                             # WhatsApp
+[ ] com.yahoo.mobile.client.android.mail     # Yahoo Mail
+[X] com.zhiliaoapp.musically                 # TikTok
+[ ] org.mozilla.firefox                      # Firefox
+[ ] org.telegram.messenger                   # Telegram

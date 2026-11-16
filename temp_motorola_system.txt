@@ -1,0 +1,469 @@
+# Inventario temporario - pacotes de sistema
+# Motorola edge 70 pro / Android 16
+# Gerado a partir de: adb shell pm list packages -s -i --user 0
+# Total: 437 pacotes
+#
+# [ ] revisar; altere para [x] somente depois de entender o impacto
+# [!] componente tecnico/protegido nesta triagem; nao selecionar sem analise
+#
+# A classificacao UAD e apenas uma referencia comunitaria, nao uma garantia.
+# "Sistema" descreve como o pacote foi instalado, nao se ele e essencial.
+# Nesta etapa nenhuma acao foi executada no aparelho.
+
+## Parceiros, operadoras e instaladores promocionais (18)
+
+[ ] com.amazon.appmanager # UAD=Recommended | Mobile Device Information Provider
+[ ] com.aura.oobe.motorola # UAD=Recommended | MotoApps
+[ ] com.aura.oobe.vodafone # UAD=Recommended | Vodafone AppBox
+[ ] com.claroColombia.contenedor # UAD=Recommended | Claro
+[ ] com.dti.amx # UAD=Recommended | it's used to choose app install? A lot trackers, permissions.
+[ ] com.dti.motorola # installer=com.dti.motorola | UAD=Recommended | Mobile Services Manager
+[ ] com.facebook.appmanager # installer=com.facebook.system | UAD=Recommended | Facebook app manager handles Facebook apps updates.
+[ ] com.facebook.services # installer=com.facebook.system | UAD=Recommended | Facebook Services is a tool that lets you manage different Facebook services automatically using your Android device.
+[ ] com.facebook.system # installer=com.facebook.system | UAD=Recommended | Facebook App Installer (empty shell app which incites you to install the Facebook app)
+[x] com.glance.lockscreenM
+[x] com.handmark.expressweather # UAD=Recommended | 1Weather (https://play.google.com/store/apps/details?id=com.handmark.expressweather)
+[ ] com.indus.appstore
+[x] com.inmobi.weather # installer=com.android.vending
+[ ] com.ironsource.appcloud.oobe.hutchison # UAD=Recommended | AppCloud (discontinued) from ironSource, an advertising company.
+[ ] com.orange.aura.oobe # UAD=Recommended | Orange Manual Selector
+[ ] com.orange.update # UAD=Recommended | Handles Orange apps updates.
+[ ] com.payjoy.access # UAD=Recommended | It's for lock device and probably safe mode.
+[x] com.taboola.mip # UAD=Recommended | Intrusive background module (Taboola) that keeps pushing a lock-screen stories feed — spam-ads and irrelevant articles (often from foreign/hostile sources).
+
+## Motorola e Lenovo - revisar individualmente (166)
+
+[ ] android.autoinstalls.config.motorola.layout # installer=com.android.vending | UAD=Recommended | Device configuration for Motorola
+[ ] com.lenovo.qira
+[ ] com.lenovo.qiracore
+[ ] com.motorola.account # installer=com.android.vending
+[ ] com.motorola.actioncore # installer=com.android.vending
+[ ] com.motorola.actions # installer=com.android.vending | UAD=Advanced | Moto Actions (https://play.google.com/store/apps/details?id=com.motorola.actions)
+[ ] com.motorola.actions.overlay # UAD=Recommended | Useless overlay config default to Moto Actions (com.motorola.actions)
+[ ] com.motorola.activestylus
+[ ] com.motorola.aicore # installer=com.android.vending
+[ ] com.motorola.aiservices # UAD=Recommended | Moto AI Services
+[ ] com.motorola.aitranslation # installer=com.android.vending
+[ ] com.motorola.android.coresettingsext.overlay.doubletap # UAD=Recommended | Double tap to put display to sleep
+[ ] com.motorola.android.coresettingsext.overlay.merc
+[ ] com.motorola.android.fmradio # UAD=Recommended | FMRadioService
+[ ] com.motorola.android.launcher.overlay.amx
+[ ] com.motorola.android.launcher.overlay.animation.scale # UAD=Expert | Overlay to transition_anim_scale? Maybe unused, not sure.
+[ ] com.motorola.android.launcher.overlay.applabeltwolines
+[ ] com.motorola.android.launcher.overlay.koodo
+[ ] com.motorola.android.launcher.overlay.retail.global # UAD=Advanced | This package is part of Motorola's custom launcher overlay designed for retail or global versions of their devices.
+[ ] com.motorola.android.launcher.overlay.telus
+[ ] com.motorola.android.launcher.overlay.vfeu
+[ ] com.motorola.android.launcher.overlay.vivo
+[ ] com.motorola.android.nativedropboxagent # UAD=Recommended | Native DropBox Agent.
+[ ] com.motorola.android.networkstack.overlay.mcc460 # UAD=Expert | This package is part of Motorola's custom network stack overlay, specifically related to the network configuration for a particular Mobile Country Code (MCC), i
+[ ] com.motorola.android.networkstack.tethering.overlay.motCommon # UAD=Advanced | This package is part of Motorola's custom overlay for the network stack, specifically related to tethering and hotspot functionalities.
+[ ] com.motorola.android.overlay.appclone
+[!] com.motorola.android.overlay.common # UAD=Unsafe | It has some important configs. Better don't risk.
+[ ] com.motorola.android.overlay.crystaltalkai # UAD=Recommended | Enable crystal talk AI settings? I've never seen that.
+[ ] com.motorola.android.overlay.deviceconfig.merc
+[ ] com.motorola.android.overlay.dualsim
+[ ] com.motorola.android.overlay.hw_dualsim
+[ ] com.motorola.android.overlay.lpptoga # UAD=Advanced | This package is part of Motorola's custom overlay and is likely associated with specific visual or functional enhancements tailored for Motorola devices.
+[ ] com.motorola.android.overlay.moto_pen
+[ ] com.motorola.android.overlay.mtk.common
+[ ] com.motorola.android.overlay.payjoy
+[ ] com.motorola.android.overlay.vendor.common
+[ ] com.motorola.android.providers.chromehomepage # UAD=Recommended | Seems to provide the "Home"-button functionality in Chrome.
+[!] com.motorola.android.providers.settings # UAD=Unsafe | Removal causes bootloop. Which is common with settings providers.
+[ ] com.motorola.android.providers.settings.auto_generated_rro_product__ # UAD=Advanced | This package is part of Motorola’s custom settings provider, and it likely includes resources or settings related to Motorola-specific customizations.
+[ ] com.motorola.android.providers.settings.overlay.dppcamera # UAD=Advanced | This package is part of Motorola's custom settings overlay, specifically related to settings for the camera application.
+[ ] com.motorola.android.providers.settings.overlay.dppnone # UAD=Advanced | This package is part of Motorola's custom settings overlay, potentially dealing with settings or configurations that are applied when certain features or option
+[ ] com.motorola.android.provisioning # UAD=Advanced | OMA Client Provisioning
+[ ] com.motorola.android.server.telecom.overlay.jp
+[ ] com.motorola.android.settings.overlay.appclone
+[ ] com.motorola.android.settings.overlay.fps.display # UAD=Advanced | Overlay to fps display.
+[ ] com.motorola.android.settings.overlay.global # UAD=Advanced | This package is part of Motorola's custom settings overlay and is designed for global settings that apply across different regions or device configurations.
+[ ] com.motorola.android.settings.overlay.lra # UAD=Advanced | This package is part of Motorola’s custom settings overlay, likely related to specific regional or device configurations.
+[ ] com.motorola.android.settings.overlay.power.bottom # UAD=Advanced | This package is part of Motorola’s custom settings overlay, specifically related to power management settings.
+[ ] com.motorola.android.settings.uxcore.overlay
+[ ] com.motorola.android.systemui.overlay.att # UAD=Advanced | This overlay needed for (com.motorola.attvowifi) I guess. It's for WiFi Calling.
+[ ] com.motorola.android.systemui.overlay.sprint # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
+[ ] com.motorola.android.systemui.overlay.tmo # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
+[ ] com.motorola.android.systemui.overlay.usc # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
+[ ] com.motorola.android.systemui.overlay.vzw # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
+[ ] com.motorola.appdirectedsmsproxy # UAD=Recommended | An Application directed SMS (or rather a Port directed SMS) is an SMS directed to a specific port.
+[ ] com.motorola.appforecast # UAD=Recommended | Performance
+[ ] com.motorola.att.phone.extensions # UAD=Recommended | AT&T Phone Extension
+[ ] com.motorola.attvowifi # UAD=Recommended | AT&T Wifi-calling
+[ ] com.motorola.audiorecorder # installer=com.android.vending | UAD=Advanced | Audio recorder
+[ ] com.motorola.bach.modemstats # UAD=Recommended | ModemStatsService
+[ ] com.motorola.batterycare # UAD=Advanced | This package is part of Motorola's battery management system, specifically related to features or optimizations for battery care.
+[ ] com.motorola.batterycare.overlay # UAD=Advanced | This package is part of Motorola’s custom battery care overlay and is likely responsible for providing Motorola-specific enhancements or visual elements related
+[ ] com.motorola.batterycare.overlay.appside # UAD=Advanced | This package is part of Motorola's custom battery care overlay and is likely associated with specific enhancements or visual elements related to battery managem
+[ ] com.motorola.brapps # UAD=Recommended | Motorola App Box (https://play.google.com/store/apps/details?id=com.motorola.brapps)
+[ ] com.motorola.bug2go # UAD=Recommended | Bugs reporting app that sends info about crash report.
+[ ] com.motorola.callredirectionservice # UAD=Recommended | Added in Android 10. Provide support for call redirection/cancellation if your Carrier supports it (when someone call.
+[ ] com.motorola.camera.ai.colortone
+[ ] com.motorola.camera5
+[ ] com.motorola.carrierconfig # UAD=Advanced | Carrier Services
+[ ] com.motorola.carriersettingsext # UAD=Advanced | This is a WiFi calling app supported by AT&T, T-Mobile, Orange.
+[ ] com.motorola.ccc.devicemanagement # UAD=Recommended | Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure
+[x] com.motorola.ccc.notification # installer=com.android.vending | UAD=Recommended | Motorola Notifications (https://play.google.com/store/apps/details?id=com.motorola.ccc.notification)
+[ ] com.motorola.ccc.ota # UAD=Expert | Motorola Update Services
+[ ] com.motorola.contacts.preloadcontacts # UAD=Recommended | Preloaded Contacts
+[ ] com.motorola.contacts.preloadcontacts.overlay.vzw # UAD=Recommended | Useless icon to Verizon Wireless app.
+[ ] com.motorola.coresettingsext # UAD=Expert | Core Settings extension
+[ ] com.motorola.createwithai
+[ ] com.motorola.demo # UAD=Recommended | Moto Demo Mode
+[ ] com.motorola.dolby.dolbyui # UAD=Advanced | Dolby Atmos
+[ ] com.motorola.dynamicvolume # UAD=Recommended | Adaptive volume
+[ ] com.motorola.easyprefix # UAD=Recommended | Motorola Easy Prefix (https://play.google.com/store/apps/details?id=com.motorola.easyprefix)
+[ ] com.motorola.enterprise.adapter.service # UAD=Recommended | Moto Thinkshield
+[ ] com.motorola.enterprise.service # UAD=Recommended | Moto Thinkshield
+[ ] com.motorola.entitlement # UAD=Expert | Enable WiFi tethering/hotspot functionality.
+[ ] com.motorola.faceunlock # UAD=Advanced | Moto Face Unlock (https://play.google.com/store/apps/details?id=com.motorola.faceunlock)
+[ ] com.motorola.freeform # UAD=Expert | Freeform
+[X] com.motorola.gamemode # installer=com.android.vending | UAD=Recommended | Moto Gametime.
+[x] com.motorola.genie # installer=com.android.vending | UAD=Recommended | Device Help (previously Moto Help) (https://play.google.com/store/apps/details?id=com.motorola.genie)
+[ ] com.motorola.gesture # UAD=Recommended | Gesture navigation tutorial added in Android 10.
+[ ] com.motorola.hce
+[x] com.motorola.help # UAD=Recommended | Moto feedback (https://play.google.com/store/apps/details?id=com.motorola.help)
+[ ] com.motorola.help.extlog # UAD=Recommended | Moto Feedback Assistant
+[ ] com.motorola.hiddenmenuapp # UAD=Recommended | Added in Android 10. Safe to remove.
+[ ] com.motorola.installer # installer=com.motorola.installer | UAD=Advanced | This package is used by Motorola for managing and installing system updates, custom apps, or other Motorola-specific applications.
+[ ] com.motorola.iotservice # installer=com.android.vending
+[ ] com.motorola.journal
+[ ] com.motorola.launcher3 # UAD=Expert | Motorola system launcher
+[ ] com.motorola.launcher3.auto_generated_rro_product__
+[ ] com.motorola.launcherconfig # UAD=Advanced | Google Launcher Config
+[ ] com.motorola.launcherconfig.overlay.amxcl
+[ ] com.motorola.launcherconfig.overlay.amxco
+[ ] com.motorola.launcherconfig.overlay.amxla
+[ ] com.motorola.launcherconfig.overlay.amxmx
+[ ] com.motorola.launcherconfig.overlay.amxpe
+[ ] com.motorola.launcherconfig.overlay.grid4x6
+[ ] com.motorola.launcherconfig.overlay.oraeu
+[ ] com.motorola.launcherconfig.overlay.retin
+[ ] com.motorola.launcherconfig.overlay.retru
+[ ] com.motorola.lifetimedata # UAD=Recommended | It's most likely the Total Call Timer or more generally it handles info like the date of manufacture of your device,
+[ ] com.motorola.livewallpaper3 # installer=com.android.vending | UAD=Recommended | Moto interactive wallpapers
+[ ] com.motorola.migrateassist
+[x] com.motorola.mobiledesktop # installer=com.android.vending | UAD=Recommended | Ready For
+[x] com.motorola.mobiledesktop.core # UAD=Recommended | Needed for Ready For (com.motorola.mobiledesktop)
+[x] com.motorola.motcameradesktop # UAD=Recommended | Camera Desktop Settings
+[ ] com.motorola.moto # installer=com.android.vending | UAD=Recommended | Moto (https://play.google.com/store/apps/details?id=com.motorola.moto)
+[ ] com.motorola.motocare # UAD=Recommended | Moto Care was renamed in "Moto Help" and then in "Device Help"
+[ ] com.motorola.motocit # UAD=Recommended | CQATest
+[ ] com.motorola.motolights # UAD=Advanced | Moto Lights
+[ ] com.motorola.motosecurecore
+[ ] com.motorola.motosignature.app # UAD=Advanced | This app has permissions descriptions, lab, game mode launch permissions, audio monitor descriptions.
+[ ] com.motorola.motosignature2.app # UAD=Advanced | Uses library 'com.motorola.motosignature', perm info to start gif maker, permlab moto trusted apps overlay and permlab monitor input.
+[!] com.motorola.msimsettings # UAD=Unsafe | Dual SIM Settings
+[ ] com.motorola.msimsettings.overlay # UAD=Advanced | In code found: 'channel_force_single_sim'. Looks very unused.
+[ ] com.motorola.mykey # UAD=Advanced | This package is related to Motorola’s 'MyKey' feature, which is a tool designed to manage key settings and restrictions for device usage.
+[ ] com.motorola.nfwlocationattribution # UAD=Recommended | Useless Carrier Location Access. You can find it in settings location but it's not very useful.
+[ ] com.motorola.om # installer=com.android.vending | UAD=Advanced | The package 'com.motorola.om' is associated with Motorola's operational management or device management tools.
+[ ] com.motorola.omadm.service # UAD=Recommended | Appears safe to remove.
+[ ] com.motorola.omadm.vzw # UAD=Recommended | OMA Device Management for Verizon
+[ ] com.motorola.overlay.launcher3 # UAD=Recommended | Useless overlay config default to Launcher3 default launcher Moto (com.motorola.launcher3)
+[ ] com.motorola.paks # UAD=Recommended | ADB: Package Protected.
+[ ] com.motorola.paks.notification # UAD=Recommended | Notifications from (com.motorola.paks)
+[ ] com.motorola.personalize # UAD=Advanced | Needed for theme edit.
+[ ] com.motorola.playautoinstallext
+[ ] com.motorola.rcsConfigService # UAD=Advanced | RCS Config Service
+[ ] com.motorola.revoker.services # UAD=Recommended | It's another component of setup wizard only used on first-boot setup.
+[ ] com.motorola.safetycenter.resources.overlay # UAD=Recommended | Useless overlay to com.google.android.safetycenter.resources
+[ ] com.motorola.sarcontrol
+[ ] com.motorola.screenshoteditor # UAD=Advanced | Screenshot Editor
+[ ] com.motorola.securevault # UAD=Advanced | Secure Folder
+[ ] com.motorola.securityhub # installer=com.android.vending | UAD=Recommended | Moto Secure
+[ ] com.motorola.securityhubext # UAD=Advanced | This package is related to Motorola's Security Hub, an extension or enhancement for the device’s security features.
+[ ] com.motorola.settings.mep.overlay
+[ ] com.motorola.setup # UAD=Expert | Related to Motorola Account setup (only during first boot?) DO NOT REMOVE unless you don't care about security patches. Freezing this package completely halts G
+[ ] com.motorola.setup.auto_generated_rro_product__ # UAD=Expert | This package is involved in Motorola's setup process, particularly handling automatically generated resources related to the setup of the device.
+[ ] com.motorola.setup.overlay.dlcdisclaimer
+[ ] com.motorola.setup.overlay.gemini
+[ ] com.motorola.setup.overlay.pai # UAD=Recommended | Useless component of (com.motorola.setup)
+[ ] com.motorola.slpc_sys # UAD=Recommended | Motorola Slpc System
+[ ] com.motorola.smart5g # UAD=Expert | Battery saving for 5G.
+[X] com.motorola.smartfeed # installer=com.android.vending
+[ ] com.motorola.smartmode
+[ ] com.motorola.spaces # UAD=Recommended | Family Space
+[ ] com.motorola.spectrum.setup.extensions # UAD=Recommended | Spectrum Setup
+[ ] com.motorola.sstservice # UAD=Advanced | Spatial Sound
+[ ] com.motorola.stylus
+[ ] com.motorola.systemserver # UAD=Recommended | Moto Service Experience, debugging app.
+[ ] com.motorola.systemui.desk # UAD=Recommended | DesktopSystemUI
+[ ] com.motorola.systemui.overlay.dcm
+[ ] com.motorola.systemui.overlay.jp
+[ ] com.motorola.systemui.overlay.moto.sysbar
+[ ] com.motorola.thermalservice # UAD=Expert | Motorola Thermal Service
+[ ] com.motorola.timeweatherwidget # installer=com.android.vending | UAD=Recommended | Provides time/weather widget on the home screen.
+[ ] com.motorola.touchshare # installer=com.android.vending
+[ ] com.motorola.uxcore # installer=com.android.vending
+[ ] com.motorola.vzw.pco.extensions.pcoreceiver # UAD=Recommended | pcoreceiver
+[ ] com.motorola.wifi.motowifimetrics # UAD=Recommended | Useless Wi-Fi daily stats.
+
+## Aplicativos Google visiveis - revisar conforme o uso (30)
+
+[ ] com.android.chrome # installer=com.android.vending | UAD=Advanced | Google Chrome (https://play.google.com/store/apps/details?id=com.android.chrome)
+[ ] com.google.android.apps.bard # installer=com.android.vending | UAD=Recommended | Google Gemini, safe to remove. Works completely fine without it.
+[ ] com.google.android.apps.carrier.carrierwifi # installer=com.android.vending | UAD=Advanced | WiFi Provisioner
+[ ] com.google.android.apps.docs # installer=com.android.vending | UAD=Recommended | Google Drive (https://play.google.com/store/apps/details?id=com.google.android.apps.docs)
+[ ] com.google.android.apps.maps # installer=com.android.vending | UAD=Recommended | Google Maps (https://play.google.com/store/apps/details?id=com.google.android.apps.maps)
+[ ] com.google.android.apps.messaging # installer=com.android.vending | UAD=Advanced | Google Messages (https://play.google.com/store/apps/details?id=com.google.android.apps.messaging)
+[ ] com.google.android.apps.nbu.files # installer=com.android.vending | UAD=Recommended | Files by Google (https://play.google.com/store/apps/details?id=com.google.android.apps.nbu.files)
+[ ] com.google.android.apps.photos # installer=com.android.vending | UAD=Recommended | Google Photos (https://play.google.com/store/apps/details?id=com.google.android.apps.photos)
+[ ] com.google.android.apps.restore # installer=com.android.vending | UAD=Recommended | The backup restore wizard used for pulling Android system backups from your Google account.
+[ ] com.google.android.apps.safetyhub # installer=com.android.vending | UAD=Advanced | Personal Safety (https://play.google.com/store/apps/details?id=com.google.android.apps.safetyhub)
+[ ] com.google.android.apps.tachyon # installer=com.android.vending | UAD=Recommended | Google Duo (Video Calls) (https://play.google.com/store/apps/details?id=com.google.android.apps.tachyon)
+[ ] com.google.android.apps.turbo # UAD=Expert | Device Health Services.
+[ ] com.google.android.apps.wallpaper # UAD=Advanced | Google Wallpapers (https://play.google.com/store/apps/details?id=com.google.android.apps.wallpaper)
+[ ] com.google.android.apps.wellbeing # installer=com.android.vending | UAD=Advanced | Digital Wellbeing (https://play.google.com/store/apps/details?id=com.google.android.apps.wellbeing)
+[ ] com.google.android.apps.work.clouddpc # installer=com.android.vending | UAD=Recommended | Device Policy
+[x] com.google.android.apps.youtube.music # installer=com.android.vending | UAD=Recommended | YouTube Music (https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music)
+[ ] com.google.android.calculator # installer=com.android.vending | UAD=Recommended | Google Calculator (https://play.google.com/store/apps/details?id=com.google.android.calculator)
+[ ] com.google.android.calendar # installer=com.android.vending | UAD=Recommended | Google Calendar (https://play.google.com/store/apps/details?id=com.google.android.calendar)
+[ ] com.google.android.contacts # installer=com.android.vending | UAD=Advanced | Google Contacts (https://play.google.com/store/apps/details?id=com.google.android.contacts)
+[ ] com.google.android.deskclock # installer=com.android.vending | UAD=Advanced | Google clock app (https://play.google.com/store/apps/details?id=com.google.android.deskclock)
+[ ] com.google.android.dialer # installer=com.android.vending | UAD=Advanced | Google Dialer (https://play.google.com/store/apps/details?id=com.google.android.dialer)
+[ ] com.google.android.gm # installer=com.android.vending | UAD=Recommended | Gmail (https://play.google.com/store/apps/details?id=com.google.android.gm)
+[ ] com.google.android.googlequicksearchbox # installer=com.android.vending | UAD=Advanced | Google Search box (https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox)
+[ ] com.google.android.inputmethod.latin # installer=com.android.vending | UAD=Advanced | Gboard – the Google Keyboard (https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin)
+[ ] com.google.android.marvin.talkback # installer=com.android.vending | UAD=Advanced | Android Accessibility Suite (https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback)
+[ ] com.google.android.projection.gearhead # installer=com.android.vending | UAD=Advanced | Android Auto (https://play.google.com/store/apps/details?id=com.google.android.projection.gearhead)
+[ ] com.google.android.tts # installer=com.android.vending | UAD=Advanced | Speech Recognition and Synthesis from Google (https://play.google.com/store/apps/details?id=com.google.android.tts)
+[x] com.google.android.videos # installer=com.android.vending | UAD=Recommended | Google TV (previously Google Play Movies & TV) (https://play.google.com/store/apps/details?id=com.google.android.videos)
+[ ] com.google.android.youtube # installer=com.android.vending | UAD=Recommended | YouTube (https://play.google.com/store/apps/details?id=com.google.android.youtube)
+[ ] com.google.ar.core # installer=com.android.vending | UAD=Recommended | Google Play Services for AR (Augmented Reality) (https://play.google.com/store/apps/details?id=com.google.ar.core)
+
+## Infraestrutura Google - protegida nesta triagem (69)
+
+[!] com.google.ambient.streaming # installer=com.android.vending | UAD=Recommended | Access and use your Android phone's apps from your Chromebook
+[!] com.google.android.accessibility.switchaccess # installer=com.android.vending | UAD=Recommended | Switch Access
+[!] com.google.android.adservices.api # UAD=Recommended | Introduced in Android 13 privacy sandbox beta components disabled on default.
+[!] com.google.android.aicore # installer=com.android.vending | UAD=Advanced | AI Core
+[!] com.google.android.appsearch.apk # UAD=Expert | AppSearch is an on-device search library for managing locally stored structured data, with APIs for indexing data and retrieving data using full-text search. Us
+[!] com.google.android.as # installer=com.android.vending | UAD=Recommended | Android System Intelligence (previously Device Personalization Services) (https://play.google.com/store/apps/details?id=com.google.android.as)
+[!] com.google.android.as.oss # installer=com.android.vending | UAD=Recommended | Private Compute Services. On-device behavior analysis
+[!] com.google.android.captiveportallogin # UAD=Advanced | it's the same as (com.android.captiveportallogin). Support for captive portal.
+[!] com.google.android.carrier # UAD=Unsafe | Carrier Settings
+[!] com.google.android.cellbroadcastreceiver # UAD=Expert | Wireless emergency alerts
+[!] com.google.android.cellbroadcastservice # UAD=Expert | Cell broadcast is designed to deliver messages to multiple users in an area.
+[!] com.google.android.configupdater # UAD=Expert | Config Update
+[!] com.google.android.connectivity.resources # UAD=Unsafe | Network connectivity resources.
+[!] com.google.android.documentsui # UAD=Unsafe | Occasionally runs in the background.
+[!] com.google.android.euicc # installer=com.android.vending | UAD=Expert | eUICC (embedded UICC) refers to the architectural standards for eSIM, a device used to securely store one or more SIM card profiles, which are the unique identi
+[!] com.google.android.ext.services # UAD=Unsafe | The ExtServices module updates framework components for core OS functionality such as notification ranking, autofill text-matching strategies, storage cache, pa
+[!] com.google.android.ext.shared # UAD=Unsafe | Android Shared Library.
+[!] com.google.android.federatedcompute # UAD=Recommended | FederatedCompute.
+[!] com.google.android.feedback # UAD=Recommended | This is the package that sends crash-report feedback to the Play Store? The crash pop-up still happens with this disabled.
+[!] com.google.android.gms # installer=com.android.vending | UAD=Expert | Google Play Services
+[!] com.google.android.gms.location.history # UAD=Recommended | Google Location History
+[!] com.google.android.gms.supervision # UAD=Recommended | Family Link parental controls
+[!] com.google.android.gsf # UAD=Expert | Google Services Framework
+[!] com.google.android.health.connect.backuprestore # UAD=Advanced | Health Connect for Android backup/restore.
+[!] com.google.android.healthconnect.controller # UAD=Advanced | Health Connect by Android gives you a simple way to share data between your health, fitness, and wellbeing apps without compromising on privacy.
+[!] com.google.android.hotspot2.osulogin # UAD=Advanced | The sole purpose of the OsuLogin App is to provision credentials from the Wi-Fi network to the device and allow them to connect to Wi-Fi Hotspot 2.0. See https:
+[!] com.google.android.modulemetadata # UAD=Unsafe | Module that contains metadata about the list of modules on the device. And that’s about it.
+[!] com.google.android.networkstack # UAD=Unsafe | Network Stack Components
+[!] com.google.android.networkstack.tethering # UAD=Expert | Uninstalling/Disabling this app will break Hotspot and Bluetooth/USB Tethering.
+[!] com.google.android.ondevicepersonalization.services # UAD=Recommended | OnDevicePersonalization.
+[!] com.google.android.onetimeinitializer # UAD=Recommended | Provides first time setup, safe to remove.
+[!] com.google.android.overlay.gmsconfig.aicore
+[!] com.google.android.overlay.gmsconfig.asi # UAD=Advanced | it's another component of
+[!] com.google.android.overlay.gmsconfig.common # UAD=Expert | If you delete this package, you won't be able to log in to your Google account on a Google app. But if you don't need to log in to a Google account, you can saf
+[!] com.google.android.overlay.gmsconfig.comms # UAD=Expert | Useless configurations dialer, sms, contacts Google(GApps)
+[!] com.google.android.overlay.gmsconfig.contextualsearch
+[!] com.google.android.overlay.gmsconfig.geotz # UAD=Expert | Provides Geolocation Time Zone detection.
+[!] com.google.android.overlay.gmsconfig.gsa # UAD=Advanced | configures default assistant? And have config to allow disabling assist disclosure?
+[!] com.google.android.overlay.gmsconfig.personalsafety # UAD=Expert | Not needed for (com.google.android.apps.safetyhub).
+[!] com.google.android.overlay.gmsconfig.photos # UAD=Unsafe | WARNING: Uninstalling it makes it impossible to unlock Android 15, Blackview Tab 60 WiFi!
+[!] com.google.android.overlay.gmsconfig.searchselector # UAD=Expert | Removal will crash most apps like settings, clock, firefox, github, termux etc.
+[!] com.google.android.overlay.modules.captiveportallogin.forframework # UAD=Advanced | Configs default captiveportallogin. (not needed)
+[!] com.google.android.overlay.modules.documentsui # UAD=Expert | WARNING: Uninstalling it breaks the Scheduled power on/off page of the Settings app for Android 15, Blackview Tab 60 WiFi!
+[!] com.google.android.overlay.modules.ext.services # UAD=Unsafe | it's overlay that depends on (com.google.android.ext.services)
+[!] com.google.android.overlay.modules.healthfitness.forframework # UAD=Recommended | Another part of health fitness system, useless for most users along with all other health fitness packages.
+[!] com.google.android.overlay.modules.modulemetadata.forframework # UAD=Unsafe | If you remove this package, your phone has an extremely large chance of bootlooping. Just don't mess around with this package. Tested on a Samsung A34 5G.
+[!] com.google.android.overlay.modules.permissioncontroller # UAD=Advanced | I only detect on this app: help_app_permissions (link below). It looks very useless, not needed.
+[!] com.google.android.overlay.modules.permissioncontroller.forframework # UAD=Expert | config_incidentReportApproverPackage
+[!] com.google.android.packageinstaller # UAD=Unsafe | Google package installer. Seems to replace com.android.packageinstaller on newer phones. It is strangely not needed on older devices (you can still install APKs
+[!] com.google.android.partnersetup # installer=com.android.vending | UAD=Advanced | Google Partner Setup
+[!] com.google.android.permissioncontroller # UAD=Unsafe | Permission controller
+[!] com.google.android.photopicker # UAD=Expert | Photo picker
+[!] com.google.android.printservice.recommendation # UAD=Advanced | I think this has to do with recommending a printservice app you can get from the Play store.
+[!] com.google.android.providers.media.module # UAD=Expert | Media Storage
+[!] com.google.android.rkpdapp # UAD=Unsafe | Security and privacy management app for Pixel devices.
+[!] com.google.android.safetycenter.resources # UAD=Expert | Google Safety Center.
+[!] com.google.android.sdksandbox # UAD=Unsafe | Introduced in Android 13 privacy sandbox beta disabled on default.
+[!] com.google.android.server.deviceconfig.resources # UAD=Advanced | Device configuration server resources for Android devices.
+[!] com.google.android.setupwizard # UAD=Advanced | Android Setup
+[!] com.google.android.tag # UAD=Recommended | Support for NFC tags interactions (5 permissions : Contacts/Phone On by default).
+[!] com.google.android.uwb.resources # UAD=Expert | UWB technology resources for location tracking.
+[!] com.google.android.verifier # installer=com.android.vending
+[!] com.google.android.verifier.overlay
+[!] com.google.android.webview # installer=com.android.vending | UAD=Expert | Android System WebView (https://play.google.com/store/apps/details?id=com.google.android.webview) enables Android apps to display web content within the app its
+[!] com.google.android.wfcactivation # UAD=Advanced | Carrier Setup
+[!] com.google.android.wifi.dialog # UAD=Expert | Wi-Fi dialog. App to launch user dialogs requested by the Wi-Fi service is stored here. Contains the Activity the dialogs are launched from.
+[!] com.google.android.wifi.resources # UAD=Unsafe | Wi-Fi Service Resources. Overlay APK manifest is stored here. Extracts Wi-Fi configs.
+[!] com.google.mainline.adservices # UAD=Recommended | Adservices Train Version Package. AdServices too.
+[!] com.google.mainline.telemetry # UAD=Advanced | Contains data on which versions of modules are installed. Google Play uses this data to determine if updates are available for the modules, and to show which se
+
+## Hardware, chipset e seguranca - protegidos (34)
+
+[!] com.bluetooth.aptxmode # UAD=Recommended | Hidden aptX ALS Audio Bluetooth sample improvement from Qualcomm. Useless 96kHz sample.
+[!] com.ct.ertclib.dc.overlay
+[!] com.dolby.daxservice # UAD=Expert | Dolby
+[!] com.juphoon.cloud.sdkoverlay
+[!] com.mediatek.apmonitor # UAD=Recommended | APM Service
+[!] com.mediatek.capctrl.service # UAD=Expert | It have mtkradioex components used for corporate device management and telephony control.
+[!] com.mediatek.carrierexpress # UAD=Recommended | Hidden operator configuration. it's Carrier Express app?
+[!] com.mediatek.frameworkresoverlay # UAD=Unsafe | It have something to config AOD.
+[!] com.mediatek.FrameworkResOverlayExt # UAD=Unsafe | DisplayCutout founded in code.
+[!] com.mediatek.gbaservice # UAD=Recommended | Generic Bootstrapping Architecture. A ‘common ground’ of code used for many MediaTek apps.
+[!] com.mediatek.ims # UAD=Expert | Mediatek's implementation of IMS (low-level implementation?)
+[!] com.mediatek.ims.rcsua.service # UAD=Advanced | Needed to support IMS, RCS probably.
+[!] com.mediatek.location.lppe.main # UAD=Expert | LPPE = LTE Positioning Protocol enhancements/extensions (LTE ="4G")
+[!] com.mediatek.MtkSettingsResOverlay # UAD=Advanced | Nothing found in this app.
+[!] com.mediatek.networkstack.gooverlay
+[!] com.mediatek.networkstack.nongooverlay
+[!] com.mediatek.networkstack.overlay
+[!] com.mediatek.networkstack.tethering.googleoverlay
+[!] com.mediatek.networkstack.tethering.overlay
+[!] com.mediatek.op12.ims
+[!] com.mediatek.presence # UAD=Advanced | App used to IMS, RCS. IP Voice Call.
+[!] com.mediatek.SettingsProviderResOverlay # UAD=Advanced | Nothing found in this app.
+[!] com.mediatek.telephony # UAD=Advanced | allows you to get information about the available
+[!] com.oem.euiccpartnerapp # UAD=Recommended | EuiccPartnerApp
+[!] com.oem.euiccpartnerapp.overlay.att
+[!] com.oem.euiccpartnerapp.overlay.br
+[!] com.oem.euiccpartnerapp.overlay.cc
+[!] com.oem.euiccpartnerapp.overlay.na
+[!] com.oem.euiccpartnerapp.overlay.retca # UAD=Expert | This package is related to the eUICC (embedded Universal Integrated Circuit Card) partner application, specifically an OEM overlay that deals with eSIM function
+[!] com.oem.euiccpartnerapp.overlay.tmo
+[!] com.oem.euiccpartnerapp.overlay.vzw
+[!] com.trustonic.alpsservice
+[!] com.trustonic.teeservice # UAD=Expert | TEE = Trusted Execution Environment
+[!] com.ycc.overlay
+
+## Nucleo Android e AOSP - protegido (119)
+
+[!] android # UAD=Unsafe | Android System
+[!] android.auto_generated_characteristics_rro # UAD=Expert | Automatically generated RRO characteristics for Android customization.
+[!] android.auto_generated_rro_product__ # UAD=Expert | RRO = Runtime Resources Overlay. Used by OEMs to customize look and feel of certain applications.
+[!] android.auto_generated_rro_vendor__ # UAD=Expert | RRO = Runtime Resources Overlay. Used by OEMs to customize look and feel of certain applications.
+[!] com.android.avatarpicker # UAD=Advanced | Lets you assign pictures to contacts. It has two options: take picture from the camera, or choose from the gallery.
+[!] com.android.backupconfirm # UAD=Expert | Restores Google settings with Google Backup restore.
+[!] com.android.bips # UAD=Expert | Disabling this can cause Settings app to crash and general device slowness. Tested on Sony Xperia X, Fairphone 4 and Lenovo Yoga tab. Default Print Service.
+[!] com.android.bluetooth # UAD=Expert | Bluetooth service
+[!] com.android.bluetoothmidiservice # UAD=Advanced | Provides classes for using the MIDI protocol over Bluetooth. Safe to remove if you don't plan to connect MIDI devices.
+[!] com.android.bookmarkprovider # UAD=Advanced | Only exists for compatibility reasons to prevent apps querying it from getting null cursors they do not expect and crash.
+[!] com.android.calllogbackup # UAD=Advanced | Call Logs Backup/Restore feature.
+[!] com.android.cameraextensions # UAD=Advanced | CameraExtensionsProxy.
+[!] com.android.carrierdefaultapp # UAD=Advanced | This package is a generic solution that allows carriers to indicate when a device has run OOB(Out Of Balance). Android devices that are OOB need carrier mitigat
+[!] com.android.cellbroadcast.overlay # UAD=Recommended | Unused overlay without code. Only for Test message.
+[!] com.android.cellbroadcastreceiver # UAD=Expert | Cell broadcast is designed to deliver messages to multiple users in an area.
+[!] com.android.cellbroadcastservice.overlay # UAD=Recommended | Unused overlay. Cross-SIM duplicate detection false.
+[!] com.android.certinstaller # UAD=Unsafe | Certificate installer
+[!] com.android.companiondevicemanager # UAD=Advanced | Companion Device Manager
+[!] com.android.companiondevicemanager.auto_generated_characteristics_rro # UAD=Advanced | Companion device manager for Android device connections.
+[!] com.android.compos.payload # UAD=Expert | CompOS
+[!] com.android.credentialmanager # UAD=Advanced | Credential Manager
+[!] com.android.cts.ctsshim # UAD=Advanced | Compatibility Test Suite
+[!] com.android.cts.priv.ctsshim # UAD=Expert | Compatibility Test Service. Verifies certain upgrade scenarios. Disabling could mess with OTA updates.
+[!] com.android.DeviceAsWebcam # UAD=Advanced | Using smartphone as webcam. Dependency for Private space on Pixel devices.
+[!] com.android.devicediagnostics # UAD=Advanced | Device diagnostics and health check tools for Android devices.
+[!] com.android.devicelockcontroller # UAD=Unsafe | This app can't be uninstalled or disabled.
+[!] com.android.dialer.overlay.imei
+[!] com.android.dreams.basic # UAD=Advanced | Daydream (not Google Daydream VR) is an interactive screensaver mode built into Android.
+[!] com.android.dynsystem # UAD=Expert | Dynamic System Updates
+[!] com.android.egg # UAD=Recommended | Android's easter egg feature (spam-tap on the android version in the settings)
+[!] com.android.emergency # UAD=Advanced | Emergency rescue
+[!] com.android.externalstorage # UAD=Expert | Needed by apps to access external storage (like memory cards).
+[!] com.android.hotwordenrollment.okgoogle # UAD=Recommended | "OK Google" detection service.
+[!] com.android.hotwordenrollment.xgoogle # UAD=Recommended | "OK Google" detection service.
+[!] com.android.htmlviewer # UAD=Expert | Allows apps to load URLs into the WebView, which allows web content to be displayed directly in the app.
+[!] com.android.imsserviceentitlement # UAD=Expert | It's needed for WiFi calling.
+[!] com.android.inputdevices # UAD=Expert | Only contains a receiver named "Android keyboard", possibly for an external keyboard.
+[!] com.android.intentresolver # UAD=Expert | 'Share' functionality will be disabled after uninstalling this package on Android 14 and up. Additionally, motion photos will become broken.
+[!] com.android.internal.display.cutout.emulation.corner # UAD=Unsafe | Display cutout variant
+[!] com.android.internal.display.cutout.emulation.double # UAD=Unsafe | Display cutout variant
+[!] com.android.internal.display.cutout.emulation.hole # UAD=Unsafe | Display cutout variant
+[!] com.android.internal.display.cutout.emulation.noCutout # UAD=Unsafe | Display cutout variant
+[!] com.android.internal.display.cutout.emulation.tall # UAD=Unsafe | Display cutout variant
+[!] com.android.internal.display.cutout.emulation.waterfall # UAD=Unsafe | Display cutout variant
+[!] com.android.internal.systemui.navbar.gestural # UAD=Expert | Gesture navigation
+[!] com.android.internal.systemui.navbar.hidegestural # UAD=Expert | Allows 'Gesture hint' to be disabled in Navigation bar > Swipe gestures.
+[!] com.android.internal.systemui.navbar.threebutton # UAD=Expert | The default system navbar? It's what you use when you don't use gesture navigation.
+[!] com.android.internal.systemui.navbar.transparent # UAD=Expert | Allows 'Transparent navigation bar' to be enabled in Developer options.
+[!] com.android.keychain # UAD=Unsafe | Enables apps to use system wide credential KeyChain (shared credentials between apps)
+[!] com.android.localtransport # UAD=Unsafe | Backup transport for stashing stuff into a known location on disk, and later restoring from there.
+[!] com.android.location.fused # UAD=Expert | Manages underlying location technologies, such as GPS and Wi-Fi.
+[!] com.android.managedprovisioning # UAD=Expert | Work Setup/Work profile setup
+[!] com.android.microdroid.empty_payload # UAD=Recommended | empty app that has permission to MANAGE VIRTUAL MACHINE.
+[!] com.android.mms.service # UAD=Expert | Provides support for sending MMS.
+[!] com.android.mtp # UAD=Unsafe | MTP Host
+[!] com.android.nfc # UAD=Expert | NFC Service
+[!] com.android.nfc.overlay # UAD=Expert | NFC overlay configuration for system-level settings.
+[!] com.android.ons # UAD=Expert | Opportunistic Network Service
+[!] com.android.pacprocessor # UAD=Expert | PAC (Proxy Auto-Config) is a file which defines how an app can automatically find the correct proxy server for fetching an URL.
+[!] com.android.phone # UAD=Expert | AOSP Dialer
+[!] com.android.phone.auto_generated_characteristics_rro # UAD=Advanced | Telephony characteristics for phone app customization.
+[!] com.android.phone.overlay.carriersettings # UAD=Expert | Overlay to (com.google.android.carrier)
+[!] com.android.phone.overlay.common # UAD=Unsafe | Location and dialer things.
+[!] com.android.phone.overlay.motcommon # UAD=Advanced | Related to Motorola's custom overlay for Phone and other UI elements.
+[!] com.android.phone.overlay.noHAC
+[!] com.android.printspooler # UAD=Expert | Print Spooler
+[!] com.android.providers.blockednumber # UAD=Expert | Handles blocked number storage.
+[!] com.android.providers.calendar # UAD=Expert | Calendar Storage
+[!] com.android.providers.contactkeys # UAD=Advanced | Contact key manager for Android interactions.
+[!] com.android.providers.contacts # UAD=Expert | Contacts Storage
+[!] com.android.providers.downloads # UAD=Unsafe | Downloads Manager
+[!] com.android.providers.downloads.ui # UAD=Advanced | Downloads
+[!] com.android.providers.media # UAD=Expert | Provider of media files (images, videos and such).
+[!] com.android.providers.partnerbookmarks # UAD=Recommended | Provides bookmarks about partners of Google in Chrome.
+[!] com.android.providers.settings # UAD=Unsafe | Provider for settings app data.
+[!] com.android.providers.settings.auto_generated_rro_product__ # UAD=Recommended | Useless overlay to Backup google. Backup works without it.
+[!] com.android.providers.telephony # UAD=Unsafe | Provider for telephony data.
+[!] com.android.providers.telephony.auto_generated_characteristics_rro # UAD=Advanced | Telephony characteristics for phone app and services.
+[!] com.android.providers.telephony.overlay.carriersettings # UAD=Expert | Overlay to (com.google.android.carrier)
+[!] com.android.providers.userdictionary # UAD=Expert | Handles user dictionary for keyboard apps.
+[!] com.android.proxyhandler # UAD=Expert | Handles proxy config.
+[!] com.android.role.notes.enabled # UAD=Advanced | Notes Role enabled
+[!] com.android.se # UAD=Expert | SecureElementApplication
+[!] com.android.server.telecom # UAD=Unsafe | Manages calls via your network provider or SIM and controls the phone modem?
+[!] com.android.settings # UAD=Unsafe | AOSP Settings app.
+[!] com.android.settings.intelligence # UAD=Expert | Settings Suggestions
+[!] com.android.sharedstoragebackup # UAD=Advanced | Used during backup. Backs up the shared storage? (files accessible by every app with STORAGE permission)
+[!] com.android.shell # UAD=Unsafe | Shell
+[!] com.android.simappdialog # UAD=Expert | Sim App Dialog
+[!] com.android.soundpicker # UAD=Expert | Google Sounds. Needed to pick up a phone ringtone. No weird permissions.
+[!] com.android.stk # UAD=Advanced | SIM toolkit
+[!] com.android.storagemanager # UAD=Advanced | Storage manager (Maintenance/Storage panel in the settings)
+[!] com.android.systemui # UAD=Unsafe | Everything you see in Android that's not an app. User interface of Android
+[!] com.android.systemui.accessibility.accessibilitymenu # UAD=Recommended | Hidden menu that only shows 2 buttons:
+[!] com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__ # UAD=Advanced | Product RRO for Accessibility menu.
+[!] com.android.systemui.auto_generated_rro_product__ # UAD=Unsafe | Configs to systemui auto generated but better keep.
+[!] com.android.systemui.auto_generated_rro_vendor__ # UAD=Unsafe | Configs to systemui auto generated but better keep.
+[!] com.android.systemui.plugin.globalactions.wallet # UAD=Advanced | Apk file name: QuickAccessWallet
+[!] com.android.theme.font.Exo2Regular # UAD=Recommended | Font Exo2Regular
+[!] com.android.theme.font.RobotoSlabRegular # UAD=Recommended | Font RobotoSlabRegular
+[!] com.android.theme.font.RookeryRegular # UAD=Recommended | Font RookeryRegular
+[!] com.android.theme.font.SpaceGrotesk
+[!] com.android.theme.font.WorkSans
+[!] com.android.theme.icon.pebble # UAD=Recommended | Android icon shape only for google pixel or aosp or motorola
+[!] com.android.theme.icon.round # UAD=Recommended | Android icon shape only for Google Pixel or AOSP or Motorola
+[!] com.android.theme.icon.roundedrect # UAD=Advanced | Android color accent only for google pixel or aosp or motorola
+[!] com.android.theme.icon.teardrop # UAD=Advanced | Android color accent only for google pixel or aosp or motorola
+[!] com.android.traceur # UAD=Recommended | System Tracing
+[!] com.android.vending # installer=com.android.vending | UAD=Expert | Google Play Store
+[!] com.android.virtualization.terminal
+[!] com.android.virtualmachine.res # UAD=Expert | Empty app with no code that declares permissions to Use, Manage, Debug: Virtual Machine for use by other apps. Deleting this app may cause potential security is
+[!] com.android.vpndialogs # UAD=Expert | Provide VPN support to Android
+[!] com.android.wallpaper.livepicker # UAD=Advanced | Enables you to pick a live wallpaper. Removing it will break some weather applications (especially ones with widgets) and wallpaper applications like Muzei.
+[!] com.android.wallpaperbackup # UAD=Advanced | Wallpaper Backup
+[!] com.android.wallpapercropper # UAD=Advanced | Wallpaper cropper.
+[!] com.android.wifi.mainline.resources.overlay # UAD=Unsafe | Related to the Wi-Fi module in the AOSP. The Wi-Fi module is a part of Project Mainline,
+[!] com.android.wifi.resources.overlay # UAD=Unsafe | Contains resources that can be overlaid or customized to modify the behavior of the Wi-Fi module.
+[!] com.android.wifi.resources.overlay.motCommon # UAD=Advanced | Related to Motorola's custom overlay for Wi-Fi connections.
+[!] com.android.wifi.resources.overlay.WifiVodafoneOverlay
+
+## Outros pacotes de sistema - requerem identificacao (1)
+
+[!] com.mediatek # UAD=Unsafe | Core system services and drivers for MediaTek-powered devices.
