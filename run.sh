@@ -164,15 +164,23 @@ show_selection() {
     APPLICABLE_COUNT="$count"
 }
 
+package_enabled_state() {
+    adb -s "$DEVICE_SERIAL" shell dumpsys package "$1" </dev/null |
+        awk '/^[[:space:]]*User 0:.*[[:space:]]installed=true[[:space:]]/ {
+            for (i = 1; i <= NF; i++)
+                if ($i ~ /^enabled=[0-3]$/) print substr($i, 9)
+        }'
+}
+
 run_action() {
-    local package output confirmation success=0 failed=0 skipped=0
+    local package output confirmation state disable_output success=0 failed=0 skipped=0
     [[ "$ACTION" == "preview" ]] && return 0
     ((APPLICABLE_COUNT > 0)) || die "Nenhum pacote aplicavel foi encontrado."
     echo; echo "A acao '$ACTION' modificara o dispositivo $DEVICE_MODEL."
     read -r -p "Digite SIM para continuar: " confirmation
     [[ "$confirmation" == "SIM" ]] || die "Operacao cancelada."
 
-    while IFS= read -r package; do
+    while IFS= read -r -u 3 package; do
         in_profile_scope "$package" || continue
         if [[ "$ACTION" == "restore" ]]; then
             [[ -n "${KNOWN[$package]+x}" ]] || { ((skipped += 1)); continue; }
@@ -196,9 +204,34 @@ run_action() {
         if [[ "$output" == *Success* || "$output" == Package*installed* || "$output" == *"new state:"* ]]; then
             printf '[OK] %s\n' "$package"; ((success += 1))
         else
+            if [[ "$ACTION" == "uninstall" && "$PROFILE_LEVEL" == "system-reviewed" &&
+                  ( "$package" == "com.amazon.appmanager" || "$package" == "com.payjoy.access" ) ]]; then
+                state="$(package_enabled_state "$package")" || state=""
+                case "$state" in
+                    2|3)
+                        printf '[IGNORADO] %s: ja desativado, continua instalado\n' "$package"
+                        ((skipped += 1))
+                        continue
+                        ;;
+                    0|1)
+                        printf 'A desinstalacao de %s falhou: %s\n' "$package" "$output"
+                        if read -r -p "Desativar $package? Digite SIM para confirmar: " confirmation &&
+                           [[ "$confirmation" == "SIM" ]]; then
+                            disable_output="$(adb -s "$DEVICE_SERIAL" shell pm disable-user --user 0 "$package" </dev/null 2>&1)"
+                            state="$(package_enabled_state "$package")" || state=""
+                            if [[ "$state" == 2 || "$state" == 3 ]]; then
+                                printf '[OK] %s: desativado, continua instalado\n' "$package"
+                                ((success += 1))
+                                continue
+                            fi
+                            output="desinstalacao falhou: $output; desativacao nao confirmada: $disable_output"
+                        fi
+                        ;;
+                esac
+            fi
             printf '[FALHA] %s: %s\n' "$package" "$output"; ((failed += 1))
         fi
-    done < <(printf '%s\n' "${!SELECTED[@]}" | sort)
+    done 3< <(printf '%s\n' "${!SELECTED[@]}" | sort)
     echo; echo "Resumo: $success sucesso(s), $failed falha(s), $skipped ignorado(s)."
     ((failed == 0))
 }

@@ -12,28 +12,29 @@
 
 ## Parceiros, operadoras e instaladores promocionais (18)
 
-[ ] com.amazon.appmanager # UAD=Recommended | Mobile Device Information Provider
-[ ] com.aura.oobe.motorola # UAD=Recommended | MotoApps
-[ ] com.aura.oobe.vodafone # UAD=Recommended | Vodafone AppBox
-[ ] com.claroColombia.contenedor # UAD=Recommended | Claro
-[ ] com.dti.amx # UAD=Recommended | it's used to choose app install? A lot trackers, permissions.
-[ ] com.dti.motorola # installer=com.dti.motorola | UAD=Recommended | Mobile Services Manager
-[ ] com.facebook.appmanager # installer=com.facebook.system | UAD=Recommended | Facebook app manager handles Facebook apps updates.
-[ ] com.facebook.services # installer=com.facebook.system | UAD=Recommended | Facebook Services is a tool that lets you manage different Facebook services automatically using your Android device.
-[ ] com.facebook.system # installer=com.facebook.system | UAD=Recommended | Facebook App Installer (empty shell app which incites you to install the Facebook app)
-[x] com.glance.lockscreenM
-[x] com.handmark.expressweather # UAD=Recommended | 1Weather (https://play.google.com/store/apps/details?id=com.handmark.expressweather)
-[ ] com.indus.appstore
-[x] com.inmobi.weather # installer=com.android.vending
-[ ] com.ironsource.appcloud.oobe.hutchison # UAD=Recommended | AppCloud (discontinued) from ironSource, an advertising company.
-[ ] com.orange.aura.oobe # UAD=Recommended | Orange Manual Selector
-[ ] com.orange.update # UAD=Recommended | Handles Orange apps updates.
-[ ] com.payjoy.access # UAD=Recommended | It's for lock device and probably safe mode.
-[x] com.taboola.mip # UAD=Recommended | Intrusive background module (Taboola) that keeps pushing a lock-screen stories feed — spam-ads and irrelevant articles (often from foreign/hostile sources).
+[X] com.amazon.appmanager # UAD=Recommended | Mobile Device Information Provider | Bloatware da Amazon pré-instalado na firmware; usado apenas para promoções de fábrica e checagens de dispositivo, totalmente desnecessário para apps da Play Store.
+[X] com.aura.oobe.motorola # UAD=Recommended | MotoApps | Instalador silencioso da Digital Turbine/Aura usado pela Motorola para baixar jogos e apps patrocinados na configuração inicial ou pós-atualização.
+[X] com.aura.oobe.vodafone # UAD=Recommended | Vodafone AppBox | Instalador silencioso da plataforma Aura voltado para apps e promoções da operadora Vodafone (presente em firmwares globais/europeias).
+[X] com.claroColombia.contenedor # UAD=Recommended | Claro | Bloatware/vitrine de serviços e promoções da Claro na América Latina; baixa apps parceiros em segundo plano e não afeta o funcionamento do chip ou rede.
+[X] com.dti.amx # UAD=Recommended | Digital Turbine (América Móvil) | Instalador silencioso de apps patrocinados e rastreadores voltado para operadoras do grupo América Móvil (Claro).
+[x] com.dti.motorola # installer=com.dti.motorola | UAD=Recommended | Mobile Services Manager | Instalador da Digital Turbine na Motorola que empurra jogos e aplicativos patrocinados em segundo plano.
+[x] com.facebook.appmanager # installer=com.facebook.system | UAD=Recommended | Facebook App Manager | Serviço oculto da Meta para atualizar apps do Facebook/Instagram por fora da Play Store; apps baixados na Play Store funcionam normalmente sem ele.
+[x] com.facebook.services # installer=com.facebook.system | UAD=Recommended | Facebook Services | Serviço em segundo plano da Meta para gerenciar recursos e telemetria de apps do ecossistema Facebook.
+[x] com.facebook.system # installer=com.facebook.system | UAD=Recommended | Facebook App Installer | Instalador silencioso da Meta que incentiva ou baixa o app do Facebook automaticamente.
+[x] com.glance.lockscreenM # Glance Lockscreen | Bloatware de tela de bloqueio dinâmica que exibe notícias patrocinadas, propagandas e conteúdos externos na tela de bloqueio da Motorola.
+[x] com.handmark.expressweather # UAD=Recommended | 1Weather | App de previsão do tempo pré-instalado (da Pinsight Media/InMobi) repleto de anúncios e rastreadores; pode ser substituído pelo app nativo do Google ou outro de sua preferência.
+[x] com.indus.appstore # Indus Appstore | Loja de aplicativos alternativa indiana (PhonePe/Flipkart) embutida em firmwares globais da Motorola; totalmente inútil fora da Índia.
+[x] com.inmobi.weather # installer=com.android.vending | InMobi Weather | Módulo/app de clima vinculado à rede de publicidade InMobi (mesma empresa por trás do 1Weather), usado para exibir previsões com anúncios e rastreamento.
+[x] com.ironsource.appcloud.oobe.hutchison # UAD=Recommended | AppCloud (ironSource) | Instalador de anúncios e apps patrocinados da ironSource voltado para operadoras do grupo Hutchison (Three).
+[x] com.orange.aura.oobe # UAD=Recommended | Orange Manual Selector | Instalador silencioso da plataforma Aura para aplicativos da operadora europeia Orange, presente em firmwares compartilhadas.
+[x] com.orange.update # UAD=Recommended | Orange Update | Gerenciador de atualizações em segundo plano para aplicativos pré-instalados da operadora Orange.
+[x] com.payjoy.access # UAD=Recommended | PayJoy Access | Sistema de bloqueio remoto usado por financeiras/lojas para bloquear aparelhos comprados no crediário em caso de atraso; seguro remover apenas se o aparelho foi comprado à vista/sem financiamento PayJoy.
+[x] com.taboola.mip # UAD=Recommended | Taboola | Módulo intrusivo em segundo plano que injeta feed de notícias patrocinadas e anúncios na tela de bloqueio ou launchers.
+
 
 ## Motorola e Lenovo - revisar individualmente (166)
 
-[ ] android.autoinstalls.config.motorola.layout # installer=com.android.vending | UAD=Recommended | Device configuration for Motorola
+[x] android.autoinstalls.config.motorola.layout # installer=com.android.vending | UAD=Recommended | Device configuration for Motorola | Configuração que puxa apps patrocinados da Motorola na Play Store durante a primeira configuração. Seguro remover.
 [ ] com.lenovo.qira
 [ ] com.lenovo.qiracore
 [ ] com.motorola.account # installer=com.android.vending
@@ -50,13 +51,13 @@
 [ ] com.motorola.android.launcher.overlay.amx
 [ ] com.motorola.android.launcher.overlay.animation.scale # UAD=Expert | Overlay to transition_anim_scale? Maybe unused, not sure.
 [ ] com.motorola.android.launcher.overlay.applabeltwolines
-[ ] com.motorola.android.launcher.overlay.koodo
+[x] com.motorola.android.launcher.overlay.koodo # Overlay da tela inicial para a operadora Koodo (Canadá). Inútil no Brasil.
 [ ] com.motorola.android.launcher.overlay.retail.global # UAD=Advanced | This package is part of Motorola's custom launcher overlay designed for retail or global versions of their devices.
-[ ] com.motorola.android.launcher.overlay.telus
-[ ] com.motorola.android.launcher.overlay.vfeu
-[ ] com.motorola.android.launcher.overlay.vivo
+[x] com.motorola.android.launcher.overlay.telus # Overlay da tela inicial para a operadora Telus (Canadá). Inútil no Brasil.
+[x] com.motorola.android.launcher.overlay.vfeu # Overlay da tela inicial para a operadora Vodafone EU (Europa). Inútil no Brasil.
+[x] com.motorola.android.launcher.overlay.vivo
 [ ] com.motorola.android.nativedropboxagent # UAD=Recommended | Native DropBox Agent.
-[ ] com.motorola.android.networkstack.overlay.mcc460 # UAD=Expert | This package is part of Motorola's custom network stack overlay, specifically related to the network configuration for a particular Mobile Country Code (MCC), i
+[ ] com.motorola.android.networkstack.overlay.mcc460 # UAD=Expert | This package is part of Motorola's custom network stack overlay, specifically related to the network configuration for a particular Mobile Country Code (MCC), i | Configuração de rede exclusiva para a China (MCC 460). Inútil no Brasil.
 [ ] com.motorola.android.networkstack.tethering.overlay.motCommon # UAD=Advanced | This package is part of Motorola's custom overlay for the network stack, specifically related to tethering and hotspot functionalities.
 [ ] com.motorola.android.overlay.appclone
 [!] com.motorola.android.overlay.common # UAD=Unsafe | It has some important configs. Better don't risk.
@@ -67,50 +68,50 @@
 [ ] com.motorola.android.overlay.lpptoga # UAD=Advanced | This package is part of Motorola's custom overlay and is likely associated with specific visual or functional enhancements tailored for Motorola devices.
 [ ] com.motorola.android.overlay.moto_pen
 [ ] com.motorola.android.overlay.mtk.common
-[ ] com.motorola.android.overlay.payjoy
+[x] com.motorola.android.overlay.payjoy # Overlay visual do sistema de bloqueio da PayJoy (se o celular não é financiado via PayJoy, pode apagar).
 [ ] com.motorola.android.overlay.vendor.common
-[ ] com.motorola.android.providers.chromehomepage # UAD=Recommended | Seems to provide the "Home"-button functionality in Chrome.
+[ ] com.motorola.android.providers.chromehomepage # UAD=Recommended | Seems to provide the "Home"-button functionality in Chrome. | Força a página inicial padrão da Motorola/operadora no Google Chrome. Seguro remover.
 [!] com.motorola.android.providers.settings # UAD=Unsafe | Removal causes bootloop. Which is common with settings providers.
 [ ] com.motorola.android.providers.settings.auto_generated_rro_product__ # UAD=Advanced | This package is part of Motorola’s custom settings provider, and it likely includes resources or settings related to Motorola-specific customizations.
 [ ] com.motorola.android.providers.settings.overlay.dppcamera # UAD=Advanced | This package is part of Motorola's custom settings overlay, specifically related to settings for the camera application.
 [ ] com.motorola.android.providers.settings.overlay.dppnone # UAD=Advanced | This package is part of Motorola's custom settings overlay, potentially dealing with settings or configurations that are applied when certain features or option
 [ ] com.motorola.android.provisioning # UAD=Advanced | OMA Client Provisioning
-[ ] com.motorola.android.server.telecom.overlay.jp
+[ ] com.motorola.android.server.telecom.overlay.jp # Configuração de chamadas exclusiva para o Japão. Inútil no Brasil.
 [ ] com.motorola.android.settings.overlay.appclone
 [ ] com.motorola.android.settings.overlay.fps.display # UAD=Advanced | Overlay to fps display.
 [ ] com.motorola.android.settings.overlay.global # UAD=Advanced | This package is part of Motorola's custom settings overlay and is designed for global settings that apply across different regions or device configurations.
 [ ] com.motorola.android.settings.overlay.lra # UAD=Advanced | This package is part of Motorola’s custom settings overlay, likely related to specific regional or device configurations.
 [ ] com.motorola.android.settings.overlay.power.bottom # UAD=Advanced | This package is part of Motorola’s custom settings overlay, specifically related to power management settings.
 [ ] com.motorola.android.settings.uxcore.overlay
-[ ] com.motorola.android.systemui.overlay.att # UAD=Advanced | This overlay needed for (com.motorola.attvowifi) I guess. It's for WiFi Calling.
-[ ] com.motorola.android.systemui.overlay.sprint # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
-[ ] com.motorola.android.systemui.overlay.tmo # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
-[ ] com.motorola.android.systemui.overlay.usc # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
-[ ] com.motorola.android.systemui.overlay.vzw # UAD=Recommended | Needed for Moto Stats WiFi, it's useless.
+[ ] com.motorola.android.systemui.overlay.att # UAD=Advanced | This overlay needed for (com.motorola.attvowifi) I guess. It's for WiFi Calling. | Overlay de ícones/Wi-Fi Calling exclusivo para a operadora AT&T (EUA). Seguro remover.
+[ ] com.motorola.android.systemui.overlay.sprint # UAD=Recommended | Needed for Moto Stats WiFi, it's useless. | Overlay de ícones/Wi-Fi Calling exclusivo para a operadora Sprint (EUA). Seguro remover.
+[ ] com.motorola.android.systemui.overlay.tmo # UAD=Recommended | Needed for Moto Stats WiFi, it's useless. | Overlay de ícones/Wi-Fi Calling exclusivo para a operadora T-Mobile (EUA). Seguro remover.
+[ ] com.motorola.android.systemui.overlay.usc # UAD=Recommended | Needed for Moto Stats WiFi, it's useless. | Overlay de ícones/Wi-Fi Calling exclusivo para a operadora US Cellular (EUA). Seguro remover.
+[ ] com.motorola.android.systemui.overlay.vzw # UAD=Recommended | Needed for Moto Stats WiFi, it's useless. | Overlay de ícones/Wi-Fi Calling exclusivo para a operadora Verizon (EUA). Seguro remover.
 [ ] com.motorola.appdirectedsmsproxy # UAD=Recommended | An Application directed SMS (or rather a Port directed SMS) is an SMS directed to a specific port.
-[ ] com.motorola.appforecast # UAD=Recommended | Performance
-[ ] com.motorola.att.phone.extensions # UAD=Recommended | AT&T Phone Extension
-[ ] com.motorola.attvowifi # UAD=Recommended | AT&T Wifi-calling
+[ ] com.motorola.appforecast # UAD=Recommended | Performance | Serviço em segundo plano da Motorola que tenta prever quais apps você vai abrir para pré-carregá-los na RAM (costuma gastar mais bateria do que ajuda). Seguro remover.
+[ ] com.motorola.att.phone.extensions # UAD=Recommended | AT&T Phone Extension | Extensão de chamada da operadora americana AT&T. Seguro remover.
+[ ] com.motorola.attvowifi # UAD=Recommended | AT&T Wifi-calling | Extensão de Wi-Fi Calling da operadora americana AT&T. Seguro remover.
 [ ] com.motorola.audiorecorder # installer=com.android.vending | UAD=Advanced | Audio recorder
-[ ] com.motorola.bach.modemstats # UAD=Recommended | ModemStatsService
+[ ] com.motorola.bach.modemstats # UAD=Recommended | ModemStatsService | Coleta estatísticas e telemetria do modem para a Motorola. Seguro remover.
 [ ] com.motorola.batterycare # UAD=Advanced | This package is part of Motorola's battery management system, specifically related to features or optimizations for battery care.
 [ ] com.motorola.batterycare.overlay # UAD=Advanced | This package is part of Motorola’s custom battery care overlay and is likely responsible for providing Motorola-specific enhancements or visual elements related
 [ ] com.motorola.batterycare.overlay.appside # UAD=Advanced | This package is part of Motorola's custom battery care overlay and is likely associated with specific enhancements or visual elements related to battery managem
-[ ] com.motorola.brapps # UAD=Recommended | Motorola App Box (https://play.google.com/store/apps/details?id=com.motorola.brapps)
-[ ] com.motorola.bug2go # UAD=Recommended | Bugs reporting app that sends info about crash report.
+[x] com.motorola.brapps # UAD=Recommended | Motorola App Box (https://play.google.com/store/apps/details?id=com.motorola.brapps) | "Motorola App Box" — vitrine de aplicativos recomendados/patrocinados no Brasil. Bloatware clássico, seguro remover.
+[ ] com.motorola.bug2go # UAD=Recommended | Bugs reporting app that sends info about crash report. | Ferramenta interna de envio de relatórios de falha e logs para a Motorola. Seguro remover.
 [ ] com.motorola.callredirectionservice # UAD=Recommended | Added in Android 10. Provide support for call redirection/cancellation if your Carrier supports it (when someone call.
 [ ] com.motorola.camera.ai.colortone
 [ ] com.motorola.camera5
 [ ] com.motorola.carrierconfig # UAD=Advanced | Carrier Services
 [ ] com.motorola.carriersettingsext # UAD=Advanced | This is a WiFi calling app supported by AT&T, T-Mobile, Orange.
-[ ] com.motorola.ccc.devicemanagement # UAD=Recommended | Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure
+[x] com.motorola.ccc.devicemanagement # UAD=Recommended | Mobile Device Management (MDM) allows company’s IT department to reach inside your phone in the background, allowing them to ensure | Gerenciamento remoto empresarial (MDM). Se o celular é pessoal (não é celular corporativo gerenciado por TI de empresa), pode apagar sem medo.
 [x] com.motorola.ccc.notification # installer=com.android.vending | UAD=Recommended | Motorola Notifications (https://play.google.com/store/apps/details?id=com.motorola.ccc.notification)
 [ ] com.motorola.ccc.ota # UAD=Expert | Motorola Update Services
-[ ] com.motorola.contacts.preloadcontacts # UAD=Recommended | Preloaded Contacts
-[ ] com.motorola.contacts.preloadcontacts.overlay.vzw # UAD=Recommended | Useless icon to Verizon Wireless app.
+[x] com.motorola.contacts.preloadcontacts # UAD=Recommended | Preloaded Contacts | Pré-carrega contatos de emergência/serviço de operadoras. Seguro remover.
+[x] com.motorola.contacts.preloadcontacts.overlay.vzw # UAD=Recommended | Useless icon to Verizon Wireless app. | Overlay para pré-carregar contatos de emergência/serviço da Verizon. Seguro remover.
 [ ] com.motorola.coresettingsext # UAD=Expert | Core Settings extension
 [ ] com.motorola.createwithai
-[ ] com.motorola.demo # UAD=Recommended | Moto Demo Mode
+[X] com.motorola.demo # UAD=Recommended | Moto Demo Mode | Modo Demonstração de loja (usado em aparelhos de vitrine). Seguro remover.
 [ ] com.motorola.dolby.dolbyui # UAD=Advanced | Dolby Atmos
 [ ] com.motorola.dynamicvolume # UAD=Recommended | Adaptive volume
 [ ] com.motorola.easyprefix # UAD=Recommended | Motorola Easy Prefix (https://play.google.com/store/apps/details?id=com.motorola.easyprefix)
